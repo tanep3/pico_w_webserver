@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>メニュー</title>
+</head>
+
+<body bgcolor="#F0F0F0">
+    <table border="0" width="100%">
+        <tr>
+            <td>　</td>
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="10%">
+                <font color="pink">●</font>
+            </td>
+            <td width="80%">
+                menu
+            </td>
+        </tr>
+        <tr>
+            <td>　</td>
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="10%">
+                <font color="lightgreen">●</font>
+            </td>
+            <td width="80%">
+                <a href="/top" target="right">トップ</a>
+            </td>
+        </tr>
+        <tr>
+            <td>　</td>
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="10%">
+                <font color="lightblue">●</font>
+            </td>
+            <td width="80%">
+                <a href="/ledon" target="right">LED オン</a>
+            </td>
+        </tr>
+        <tr>
+            <td>　</td>
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="10%">
+                <font color="blue">●</font>
+            </td>
+            <td width="80%">
+                <a href="/ledoff" target="right">LED オフ</a>
+            </td>
+        </tr>
+        <tr>
+            <td>　</td>
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="10%">
+                <font color="purple">●</font>
+            </td>
+            <td width="80%">
+                <a href="/getTemperature" target="right">現在の温度</a>
+            </td>
+        </tr>
+        <tr>
+            <td>　</td>
+        </tr>
+        <tr>
+            <td width="10%"></td>
+            <td width="10%">
+                <font color="red">●</font>
+            </td>
+            <td width="80%">
+                <form id="myNameForm" method="POST" action="/inputName" target="right">
+                    <input type="hidden" name="name" value="">
+                    <a href="#" onclick="document.getElementById('myNameForm').submit(); return false;">POSTテスト</a>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

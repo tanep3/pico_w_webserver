@@ -1,8 +1,7 @@
 import network
-import socket
+import asyncio
 from time import sleep
 import machine
-import asyncio
 import ubinascii
 
 # Wi-Fi ルーターのSSIDとパスワードです
@@ -44,6 +43,7 @@ ACTION_TABLE = {
     '/ledoff': lambda: LED.off(),
     '/getTemperature': lambda: get_temperature(),
 }
+
 #POSTアクションテーブル
 #POSTのときの処理をここに登録
 POST_ACTION_TABLE = {
